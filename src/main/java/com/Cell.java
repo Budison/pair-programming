@@ -37,6 +37,6 @@ public class Cell {
         this.isAlive = !this.isAlive;
     }
     public boolean compareToCell(Cell cell) {
-        return true;
+        return this.isAlive == cell.isAlive && this.neighbours == cell.neighbours;
     }
 }

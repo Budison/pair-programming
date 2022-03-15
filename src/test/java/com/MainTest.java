@@ -75,7 +75,9 @@ public class MainTest {
     public void testCompareToCell() {
         Cell cell1 = new Cell(true, 3);
         Cell cell2 = new Cell(true, 3);
+        Cell cell3 = new Cell(true, 2);
         assertTrue(cell1.compareToCell(cell2));
+        assertFalse(cell1.compareToCell(cell3));
     }
 }
 
