@@ -28,4 +28,8 @@ public class Cell {
     public boolean resurrected() {
         return !this.isAlive && this.neighbours == 3;
     }
+
+    public void updateNeightbour(int i) {
+        this.neighbours = i;
+    }
 }

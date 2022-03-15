@@ -36,5 +36,11 @@ public class MainTest {
         Cell cell = new Cell(true, 6);
         Assert.assertFalse(cell.shouldStayAlive());
     }
+    @Test
+    public void test6() {
+        Cell cell = new Cell(true, 1);
+        cell.updateNeightbour(7);
+        Assert.assertEquals(cell.neighbours(), 7);
+    }
 }
 
