@@ -16,6 +16,11 @@ public class MainTest {
         Assert.assertFalse(cell_dead.isAlive());
     }
 
+    @Test
+    public void test2() {
+        Cell cell = new Cell(false, 5);
+        Assert.assertEquals(cell.neighbours(), 5);
+    }
 
 }
 
