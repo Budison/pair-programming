@@ -32,4 +32,8 @@ public class Cell {
     public void updateNeightbour(int i) {
         this.neighbours = i;
     }
+
+    public void trigger() {
+        this.isAlive = !this.isAlive;
+    }
 }

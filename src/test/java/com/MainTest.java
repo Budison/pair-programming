@@ -42,5 +42,16 @@ public class MainTest {
         cell.updateNeightbour(7);
         Assert.assertEquals(cell.neighbours(), 7);
     }
+
+    @Test
+    public void test7() {
+        Cell cell = new Cell(false, 3);
+        cell.trigger();
+        SoftAssert sa = new SoftAssert();
+        sa.assertTrue(cell.isAlive());
+        cell.trigger();
+        sa.assertFalse(cell.isAlive());
+        sa.assertAll();
+    }
 }
 
