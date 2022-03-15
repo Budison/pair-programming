@@ -36,4 +36,7 @@ public class Cell {
     public void trigger() {
         this.isAlive = !this.isAlive;
     }
+    public boolean compareToCell(Cell cell) {
+        return true;
+    }
 }

@@ -71,5 +71,11 @@ public class MainTest {
         }
         sa.assertAll();
     }
+    @Test
+    public void testCompareToCell() {
+        Cell cell1 = new Cell(true, 3);
+        Cell cell2 = new Cell(true, 3);
+        assertTrue(cell1.compareToCell(cell2));
+    }
 }
 
