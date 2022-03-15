@@ -21,6 +21,11 @@ public class MainTest {
         Cell cell = new Cell(false, 5);
         Assert.assertEquals(cell.neighbours(), 5);
     }
+    @Test
+    public void test3() {
+        Cell cell = new Cell(true,3);
+        Assert.assertTrue(cell.shouldStayAlive());
+    }
 
 }
 

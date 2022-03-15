@@ -20,4 +20,8 @@ public class Cell {
     public int neighbours() {
         return this.neighbours;
     }
+
+    public boolean shouldStayAlive() {
+        return this.neighbours == 2 || this.neighbours == 3;
+    }
 }
