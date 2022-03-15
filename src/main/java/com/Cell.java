@@ -24,4 +24,8 @@ public class Cell {
     public boolean shouldStayAlive() {
         return this.neighbours == 2 || this.neighbours == 3;
     }
+
+    public boolean resurrected() {
+        return !this.isAlive && this.neighbours == 3;
+    }
 }
