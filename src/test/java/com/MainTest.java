@@ -53,5 +53,23 @@ public class MainTest {
         sa.assertFalse(cell.isAlive());
         sa.assertAll();
     }
+
+    @Test
+    public void test8() {
+        Cell[][] cells = new Cell[3][3];
+
+        for (int i = 0; i < cells.length; i++) {
+            for (int j = 0; j < cells[i].length; j++) {
+                cells[i][j] = new Cell(false,0);
+            }
+        }
+        SoftAssert sa = new SoftAssert();
+        for (int i = 0; i < cells.length; i++) {
+            for (int j = 0; j < cells[i].length; j++) {
+               Assert.assertFalse(cells[i][j].isAlive());
+            }
+        }
+        sa.assertAll();
+    }
 }
 
