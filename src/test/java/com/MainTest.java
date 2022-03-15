@@ -79,5 +79,10 @@ public class MainTest {
         assertTrue(cell1.compareToCell(cell2));
         assertFalse(cell1.compareToCell(cell3));
     }
+
+    @Test
+    public void testIfGridIsNotEmpty() {
+        Grid gird = new Grid();
+    }
 }
 
