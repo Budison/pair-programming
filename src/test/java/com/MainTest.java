@@ -31,5 +31,10 @@ public class MainTest {
         Cell cell = new Cell(false, 3);
         Assert.assertTrue(cell.resurrected());
     }
+    @Test
+    public void test5() {
+        Cell cell = new Cell(true, 6);
+        Assert.assertFalse(cell.shouldStayAlive());
+    }
 }
 
