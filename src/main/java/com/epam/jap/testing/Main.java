@@ -1,4 +1,4 @@
-package com;
+package com.epam.jap.testing;
 
 public class Main {
 

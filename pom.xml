@@ -4,32 +4,26 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.w_herman</groupId>
+    <groupId>com.epam.jap.testing</groupId>
     <artifactId>w_herman</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>w_herman</name>
-    <description>Java Program</description>
-    <url>https://example.com/</url>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.targetEncoding>UTF-8</project.build.targetEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <version.testng>7.5</version.testng>
+        <version.maven.compiler>3.10.0</version.maven.compiler>
+        <version.maven.jar>3.2.2</version.maven.jar>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.5</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>RELEASE</version>
+            <version>${version.testng}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -44,7 +38,7 @@
             <archive>
               <manifest>
                 <addClasspath>true</addClasspath>
-                <mainClass>com.Main</mainClass>
+                <mainClass>com.epam.jap.testing.Main</mainClass>
               </manifest>
             </archive>
           </configuration>
